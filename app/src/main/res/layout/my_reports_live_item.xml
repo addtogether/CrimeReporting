@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_blue">
+
+
+        <TextView
+            android:id="@+id/myReportLiveNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIVE CRIME NO: 123456"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="@font/gotham"
+            android:textColor="@color/colorPrimary" />
+        <View
+            android:id="@+id/divider13152"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/myReportLiveNum"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/myReportLiveImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            app:use_controller="true"
+            app:resize_mode="fill"
+            android:layout_below="@+id/divider13152">
+
+        </com.google.android.exoplayer2.ui.PlayerView>
+
+        <TextView
+            android:id="@+id/LiveDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Crime Details:"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/myReportLiveImage"
+            android:fontFamily="@font/gotham"
+            android:textColor="#DB4437" />
+
+
+
+        <View
+            android:id="@+id/divider456"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/LiveDetails"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/myReportLiveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Darshal Parmar"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/divider456"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+
+
+
+        <TextView
+            android:id="@+id/myReportLiveAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: A/203, Shree Digvijay Apt, Opp. Saraswati High School, Cabin Road, Bhayandar East."
+            android:layout_below="@+id/myReportLiveName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/myReportLivePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 9004901800"
+            android:layout_below="@+id/myReportLiveAddress"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportLiveRelation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relation: Friend"
+            android:layout_below="@+id/myReportLivePhone"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportLiveReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report: Fair"
+            android:layout_below="@+id/myReportLiveRelation"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportLiveDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reported Added On: 12/2/2021  02:05:13"
+            android:layout_below="@+id/myReportLiveReport"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportLiveUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Phone: 9004901800"
+            android:layout_below="@+id/myReportLiveDateTime"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="#0F9D58"/>
+        <View
+            android:id="@+id/divider2222"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/myReportLiveUserPhone"
+            android:background="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/myReportLiveStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STATUS: PENDING"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/divider2222"
+            android:fontFamily="@font/gotham"
+            android:textColor="#DB4437" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

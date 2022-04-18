@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "268909225449",
+    "project_id": "crimereporting-6be7c",
+    "storage_bucket": "crimereporting-6be7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268909225449:android:a8ed9c24c5b224508d5778",
+        "android_client_info": {
+          "package_name": "com.example.crimereporting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268909225449-opqt5er8i9s4o4ajpdhvbhbm4l6qoi2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crimereporting",
+            "certificate_hash": "1511e6324704ac13dcf8e27d975bb7d34d6329ef"
+          }
+        },
+        {
+          "client_id": "268909225449-4hvs75v4680l5tk2p9dchlcb1tf70h4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgVwiEZ4n2h-Cy60FwYXKYWxHriKzn4Es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268909225449-4hvs75v4680l5tk2p9dchlcb1tf70h4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

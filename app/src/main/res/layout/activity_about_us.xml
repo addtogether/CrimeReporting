@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context=".AboutUsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="16dp">
+                <RelativeLayout
+                    android:id="@+id/rela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_dark">
+
+                    <ImageView
+                        android:id="@+id/aboutLogoImg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/logo"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:fontFamily="@font/gotham"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:layout_toRightOf="@+id/aboutLogoImg"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_dark">
+
+                    <ImageView
+                        android:id="@+id/aboutAboutImg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/about"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Version: 2.0.0"
+                        android:fontFamily="@font/gotham"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:layout_toRightOf="@+id/aboutAboutImg"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_dark">
+                    <TextView
+                        android:id="@+id/author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Author"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/gotham"
+                        android:layout_margin="10dp"/>
+
+                    <View
+                        android:id="@+id/divider4"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_below="@+id/author"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/myName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Developer Name : Vishal Pandey"
+                        android:fontFamily="@font/gotham"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/user"
+                        android:layout_below="@+id/author"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/compName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Company Name : Self"
+                        android:fontFamily="@font/gotham"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/company"
+                        android:layout_below="@+id/myName"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Email Id : vishalpandey917@gmail.com"
+                        android:fontFamily="@font/gotham"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/mail"
+                        android:layout_below="@+id/compName"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Contact : 9967313253"
+                        android:fontFamily="@font/gotham"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/phone"
+                        android:layout_below="@+id/mail"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="16dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_dark">
+
+                    <TextView
+                        android:id="@+id/tvAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About app"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/gotham"
+                        android:layout_margin="10dp"/>
+
+                    <View
+                        android:id="@+id/divider50"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_below="@+id/tvAbout"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divider50"
+                        android:fontFamily="@font/gotham"
+                        android:layout_margin="16dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Using this application, one can easily register FIR, Missing Reports and Live Crime Reports from this
+app by just uploading some details and a picture of it. \n\nThis app is user friendly, as there is no complicated user interfaces, user can easily understand the
+flow of the application. \n\nIt will also help police for tracking that what is happening in that particular area, how many cases are
+increasing or decreasing in that region. Basically, police can track and monitor that region on the basis
+of cases. \n\nBy adding the feature of Location Tracking in future, police can easily get to know he current live
+location of the user. \n\nSo this application will help the police to monitor and track the cases in a particular region easily."/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

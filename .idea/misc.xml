@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Downloads/CrimeReporting/app/src/main/res/layout/activity_about_us.xml" value="0.1" />
+        <entry key="..\:/Downloads/CrimeReporting/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/drawable-v24/buttons.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_about_us.xml" value="0.2553846153846154" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_display_my_fir_reports.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_fir.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_login.xml" value="0.2553846153846154" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_main.xml" value="0.2553846153846154" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_missing.xml" value="0.259375" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_my_reports.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_otp.xml" value="0.2553846153846154" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_register.xml" value="0.2553846153846154" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/activity_welcome.xml" value="0.2553846153846154" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/content_main.xml" value="0.134375" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/fragment_slideshow.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/my_reports_fir_item.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/my_reports_live_item.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/layout/my_reports_missing_item.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/CrimeReporting/app/src/main/res/menu/activity_main_drawer.xml" value="0.2553846153846154" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

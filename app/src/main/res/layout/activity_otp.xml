@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".OtpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                app:lottie_rawRes="@raw/otp"/>
+
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gotham"
+            android:includeFontPadding="false"
+            android:text="CODE"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="60sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gotham"
+            android:includeFontPadding="false"
+            android:text="Verification"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/otp_description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gotham"
+            android:includeFontPadding="false"
+            android:text="Enter One Time Password sent on"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/otp_phone_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/gotham"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <com.chaos.view.PinView
+                android:id="@+id/pin_view"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="#65EAEAEA"
+                app:cursorColor="@android:color/black"
+                app:hideLineWhenFilled="true"
+                android:layout_margin="10dp"
+                app:itemCount="6"
+                app:itemHeight="50dp"
+                app:itemRadius="5dp"
+                app:itemWidth="50dp"
+                app:lineColor="@color/colorAccent"
+                app:lineWidth="1dp" />
+
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/verifyOtpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/forgetPass"
+            android:background="@drawable/buttons"
+            android:text="Verify Code"
+            android:fontFamily="@font/gotham"
+            android:padding="14dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_blue">
+
+
+        <TextView
+            android:id="@+id/myReportFirNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIR NO: 123456"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="@font/gotham"
+            android:textColor="@color/colorPrimary" />
+        <View
+            android:id="@+id/divider1215"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/myReportFirNum"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/myReportFirImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            android:layout_below="@+id/divider1215"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/accusedFirDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accused Details:"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/myReportFirImage"
+            android:fontFamily="@font/gotham"
+            android:textColor="#DB4437" />
+
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/accusedFirDetails"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/myReportFirName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accused Name: Darshal Parmar"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/divider"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/myReportFirAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: A/203, Shree Digvijay Apt, Opp. Saraswati High School, Cabin Road, Bhayandar East."
+            android:layout_below="@+id/myReportFirName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/myReportFirNearestPoliceStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police Station: Navghar"
+            android:layout_below="@+id/myReportFirAddress"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/myReportFirPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 9004901800"
+            android:layout_below="@+id/myReportFirNearestPoliceStation"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportFirRelation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relation: Friend"
+            android:layout_below="@+id/myReportFirPhone"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportFirReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report: Beaten Up"
+            android:layout_below="@+id/myReportFirRelation"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/myReportFirDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reported Added On: 12/2/2021  02:05:13"
+            android:layout_below="@+id/myReportFirReport"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportFirUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Phone: 9004901800"
+            android:layout_below="@+id/myReportFirDateTime"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="#0F9D58"/>
+
+        <View
+            android:id="@+id/divider215"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/myReportFirUserPhone"
+            android:background="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/myReportFirStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STATUS: PENDING"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/divider215"
+            android:fontFamily="@font/gotham"
+            android:textColor="#DB4437" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

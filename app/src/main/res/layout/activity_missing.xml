@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MissingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        android:layout_below="@+id/toolbar">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvFir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:elevation="20dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/FirTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="15dp"
+                            android:fontFamily="@font/gotham"
+                            android:text="MISSING REPORT"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp" />
+                        <View
+                            android:id="@+id/divider3"
+                            android:layout_width="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_height="4dp"
+                            android:layout_below="@+id/FirTv"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/FirDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/divider3"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/gotham"
+                            android:gravity="left"
+                            android:justificationMode="inter_word"
+                            android:text="A Missing person complaint is a complaint which the police will acknowledge and immediately register the FIR but a Missing Person report which contains the photograph of the missing person, description etc will be generated only after 24 hours (unless the MP is a woman or a child or minor) wherein the description and photo will go out to the police database and also using a copy - a newspaper publication can be done."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/addFirTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Missing Report Here:"
+                    android:layout_below="@+id/cvFir"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/gotham" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/missingImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/addFirTv"
+                    android:src="@drawable/user_profile"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    />
+
+
+                <TextView
+                    android:id="@+id/clickHereImgMissing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to upload image (mandatory)"
+                    android:layout_below="@+id/missingImage"
+                    android:textColor="#DB4437"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/gotham"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1212"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/clickHereImgMissing"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Missing Person's Full Name"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/user"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="textPersonName"
+                            android:textColor="#DB4437"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Missing Person's Full Address"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/home"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="textPostalAddress"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Missing Person's Age"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/user"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="2"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter State Name"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/map"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonState"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter District Name"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/home"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonDistrict"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Nearest Police Station Name"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/company"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingNearestPoliceStation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Missing Person's Phone Number"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/phone"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="10"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Relation with Missing Person"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/user"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonRelation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Details about Missing Person"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/about"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Date of Missing"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/calendar"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/MissingPersonDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimary"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/addMissingBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/buttons"
+                    android:text="Add Report"
+                    android:fontFamily="@font/gotham"
+                    android:padding="14dp"
+                    android:textAllCaps="false"
+                    android:layout_below="@+id/LinearLayout1212"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

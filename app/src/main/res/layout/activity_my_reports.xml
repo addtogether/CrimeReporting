@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MyReportsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        android:layout_below="@+id/toolbar">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type Of Reports:"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/gotham" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/firMyReportsCv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="20dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#4285F4">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/firLottie"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:lottie_autoPlay="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:elevation="10dp"
+                        app:lottie_rawRes="@raw/fir"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FIR REPORT"
+                        android:fontFamily="@font/gotham"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:textSize="24sp"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/missingMyReportsCv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="20dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#0F9D58">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/missingLottie"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        app:lottie_autoPlay="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:elevation="10dp"
+                        app:lottie_rawRes="@raw/missing"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginEnd="10dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MISSING PERSON"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/gotham"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textSize="24sp"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/liveCrimeMyReportsCv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="20dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#566e7a">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/liveLottie"
+                        android:layout_width="140dp"
+                        android:layout_height="120dp"
+                        app:lottie_autoPlay="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:elevation="10dp"
+                        app:lottie_rawRes="@raw/live"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LIVE CRIME"
+                        android:fontFamily="@font/gotham"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:textSize="24sp"/>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cyberCrimeMyReportsCv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="20dp"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#DB4437">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/cyberLottie"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:lottie_autoPlay="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:elevation="10dp"
+                        app:lottie_rawRes="@raw/cyber"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CYBER CRIME"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/gotham"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textSize="24sp"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

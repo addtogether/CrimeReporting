@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        android:layout_below="@+id/toolbar">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_dark"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/gotham"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="18sp"
+                    android:text="Change Profile"/>
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_below="@+id/tva"
+                    android:background="@color/colorPrimaryDark" />
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/settings_profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:lottie_autoPlay="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:elevation="10dp"
+                    app:lottie_rawRes="@raw/profile"/>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/userImg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Phone Number"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/phone"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ProfileRegisterPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:maxLength="10"
+                            android:textColor="#DB4437"
+                            android:textCursorDrawable="@null"
+                            android:enabled="false"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Name"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/user"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ProfileRegisterName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="textPersonName"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Residential Address"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/home"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ProfileRegisterAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Email ID"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/mail"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ProfileRegisterEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Password"
+                        android:layout_marginTop="15dp"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/lock"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ProfileRegisterPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/secQuesTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinearLayout2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/gotham"
+                    android:text="Security Questions:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/LinearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/secQuesTv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Favourite Game Name"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/lock"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ProfileSecQues1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="text"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Birth Year (Eg. 2001)"
+                        android:textColorHint="@android:color/black"
+                        app:boxStrokeColor="@android:color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        android:layout_marginTop="15dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@android:color/black"
+                        app:hintTextColor="@android:color/black"
+                        app:startIconDrawable="@drawable/lock"
+                        app:startIconTint="@android:color/black">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ProfileSecQues2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:inputType="number"
+                            android:textColor="@android:color/black"
+                            android:textCursorDrawable="@null" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_below="@+id/LinearLayout3"
+                    android:background="@drawable/buttons"
+                    android:text="Update Profile"
+                    android:fontFamily="@font/gotham"
+                    android:padding="14dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

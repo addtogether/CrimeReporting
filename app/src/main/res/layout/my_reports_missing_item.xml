@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_blue">
+
+
+        <TextView
+            android:id="@+id/myReportMissingNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MISSING NO: 123456"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="@font/gotham"
+            android:textColor="@color/colorPrimary" />
+        <View
+            android:id="@+id/divider1315"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/myReportMissingNum"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/myReportMissingImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            android:layout_below="@+id/divider1315"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/accusedMissingDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Missing Person Details:"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/myReportMissingImage"
+            android:fontFamily="@font/gotham"
+            android:textColor="#DB4437" />
+
+
+
+        <View
+            android:id="@+id/divider45"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/accusedMissingDetails"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/myReportMissingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Darshal Parmar"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/divider45"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:id="@+id/myReportMissingAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: 20"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/myReportMissingName"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/myReportMissingAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: A/203, Shree Digvijay Apt, Opp. Saraswati High School, Cabin Road, Bhayandar East."
+            android:layout_below="@+id/myReportMissingAge"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/myReportMissingNearestPoliceStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police Station: Navghar"
+            android:layout_below="@+id/myReportMissingAddress"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/myReportMissingPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 9004901800"
+            android:layout_below="@+id/myReportMissingNearestPoliceStation"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportMissingRelation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relation: Friend"
+            android:layout_below="@+id/myReportMissingPhone"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportMissingReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details: Fair"
+            android:layout_below="@+id/myReportMissingRelation"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportMissingFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Missing from:"
+            android:layout_below="@+id/myReportMissingReport"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/myReportMissingDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reported Added On: 12/2/2021  02:05:13"
+            android:layout_below="@+id/myReportMissingFrom"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/myReportMissingUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Phone: 9004901800"
+            android:layout_below="@+id/myReportMissingDateTime"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/gotham"
+            android:textColor="#0F9D58"/>
+        <View
+            android:id="@+id/divider2156"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/myReportMissingUserPhone"
+            android:background="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/myReportMissingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STATUS: PENDING"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/divider2156"
+            android:fontFamily="@font/gotham"
+            android:textColor="#DB4437" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
